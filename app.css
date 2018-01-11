@@ -2,8 +2,34 @@ html, body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	width: 100%;
 }
 
-.column {
+.wrapper {
+	width: 1020px;
+	margin: auto;
+	max-width: 100%
+}
+
+.cols {
 	display: flex;
+}
+
+.cols.multiline{
+	flex-wrap: wrap;
+}
+
+.col {
+	flex: 1;
+}
+
+.col.col-6 {
+	width: 50%;
+	flex: none;
+}
+
+
+.box {
+	padding: 10px;
+	border: 1px solid;
 }
